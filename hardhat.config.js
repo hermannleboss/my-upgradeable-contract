@@ -1,9 +1,9 @@
-import {HardhatUserConfig} from "hardhat/config";
-import "@nomicfoundation/hardhat-toolbox";
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 // @ts-ignore
-const config: HardhatUserConfig = {
+const config = {
     solidity: "0.8.18",
     networks: {
         goerli: {
@@ -16,5 +16,4 @@ const config: HardhatUserConfig = {
         apiKey: process.env.ETHERSCAN_KEY
     }
 };
-
-export default config;
+exports.default = config;
